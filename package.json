@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "build": "react-scripts build",
+    "build:storybook": "build-storybook -s public",
     "check-ts": "tsc --noEmit",
     "eject": "react-scripts eject",
     "eslint": "eslint --ext ts,tsx",
@@ -13,7 +14,8 @@
     "prettify": "prettier --write",
     "start": "react-scripts start",
     "serve": "yarn build && serve -s build",
-    "test": "react-scripts test"
+    "test": "react-scripts test",
+    "storybook": "start-storybook -p 6006 -s public"
   },
   "husky": {
     "hooks": {
@@ -47,7 +49,8 @@
       "!src/**/*/Loadable.{js,jsx,ts,tsx}",
       "!src/**/*/messages.ts",
       "!src/**/*/types.ts",
-      "!src/index.tsx"
+      "!src/index.tsx",
+      "!src/*.stories.{ts,tsx}"
     ],
     "coverageThreshold": {
       "global": {
@@ -71,6 +74,12 @@
     "web-vitals": "0.2.4"
   },
   "devDependencies": {
+    "@storybook/addon-actions": "^6.1.18",
+    "@storybook/addon-essentials": "^6.1.18",
+    "@storybook/addon-links": "^6.1.18",
+    "@storybook/node-logger": "^6.1.18",
+    "@storybook/preset-create-react-app": "^3.1.6",
+    "@storybook/react": "^6.1.18",
     "@testing-library/react": "11.0.2",
     "@types/fontfaceobserver": "0.0.6",
     "@types/jest": "25.1.4",
