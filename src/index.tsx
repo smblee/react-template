@@ -1,7 +1,7 @@
 import 'react-app-polyfill/ie11';
 import 'react-app-polyfill/stable';
 
-import * as React from 'react';
+import { StrictMode } from 'react';
 import * as ReactDOM from 'react-dom';
 
 import 'sanitize.css/sanitize.css';
@@ -16,9 +16,9 @@ const MOUNT_NODE = document.getElementById('root') as HTMLElement;
 
 ReactDOM.render(
   <HelmetProvider>
-    <React.StrictMode>
+    <StrictMode>
       <App />
-    </React.StrictMode>
+    </StrictMode>
   </HelmetProvider>,
   MOUNT_NODE,
 );

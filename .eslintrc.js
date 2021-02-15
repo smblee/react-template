@@ -21,5 +21,9 @@ module.exports = {
     'import/prefer-default-export': 'off',
     'import/no-default-export': 'error',
     'no-underscore-dangle': 'off',
+    
+    // React 17
+    "react/jsx-uses-react": "off",
+    "react/react-in-jsx-scope": "off"
   }
 };

@@ -1,5 +1,7 @@
 /* eslint-disable react/jsx-props-no-spreading */
-import React, { lazy, Suspense } from 'react';
+import { lazy, Suspense } from 'react';
+
+import * as React from 'react';
 
 interface Opts {
   fallback: React.ReactNode;

@@ -1,5 +1,4 @@
 import { App } from 'app';
-import * as React from 'react';
 import { createRenderer } from 'react-test-renderer/shallow';
 
 
