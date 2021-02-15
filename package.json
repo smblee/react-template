@@ -1,5 +1,5 @@
 {
-  "name": "my-app",
+  "name": "demo-app",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -59,7 +59,10 @@
         "lines": 50,
         "statements": 50
       }
-    }
+    },
+    "testMatch": [
+      "**/?(*.)+(test).[jt]s?(x)"
+    ]
   },
   "dependencies": {
     "@testing-library/jest-dom": "5.11.4",
