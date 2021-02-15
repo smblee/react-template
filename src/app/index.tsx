@@ -9,15 +9,15 @@
 import { Helmet } from 'react-helmet-async';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
-import { NotFoundPage } from 'app/components/NotFoundPage/Loadable';
+import { NotFoundPage } from 'app/pages/NotFoundPage/Loadable';
 import { HomePage } from 'app/pages/HomePage/Loadable';
 import { GlobalStyle } from 'styles/global-styles';
 
-export function App() {
+export const App: React.FC = () => {
   return (
     <BrowserRouter>
-      <Helmet titleTemplate="%s - React Boilerplate" defaultTitle="React Boilerplate">
-        <meta name="description" content="A React Boilerplate application" />
+      <Helmet titleTemplate="%s - Hello World" defaultTitle=" Hello World">
+        <meta name="description" content="Hello World App" />
       </Helmet>
 
       <Switch>
@@ -27,4 +27,4 @@ export function App() {
       <GlobalStyle />
     </BrowserRouter>
   );
-}
+};

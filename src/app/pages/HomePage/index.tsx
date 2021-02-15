@@ -1,6 +1,6 @@
 import { Helmet } from 'react-helmet-async';
 
-export function HomePage() {
+export const HomePage: React.FC = () => {
   return (
     <>
       <Helmet>
@@ -10,4 +10,4 @@ export function HomePage() {
       <span>HomePage container</span>
     </>
   );
-}
+};

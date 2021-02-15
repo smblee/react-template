@@ -22,11 +22,11 @@ const Title = styled.div`
   }
 `;
 
-export const NotFoundPage = () => {
+export const NotFoundPage: React.FC = () => {
   return (
     <>
       <Helmet>
-        <title>404 Page Not Found</title>
+        <title>404 Not Found</title>
         <meta name="description" content="Page not found" />
       </Helmet>
       <Wrapper>
